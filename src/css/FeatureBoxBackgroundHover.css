@@ -1,0 +1,133 @@
+.feature-box {
+    border: 1px solid #e6e6e6;
+    padding: 1px;
+    position: relative;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+    z-index: 1;
+}
+.feature-box-content {
+    position: relative;
+    padding: 30px;
+    padding-bottom: 0;
+    z-index: 9;
+}
+.feature-box a {
+    font-size: 16px;
+    font-weight: 300;
+    color: #808080;
+    margin: 25px 0 10px;
+    padding: 0 30px;
+    display: block;
+    position: relative;
+    z-index: 3;
+}
+.feature-box .feature-box-img {
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 0;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+    z-index: 0;
+    background-size: cover;
+    background-position: center center;
+}
+
+.feature-box .feature-border {
+    position: absolute;
+    background: #84ba3f;
+    height: 0px;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+.feature-box-content i, .feature-box-content h4 {
+  color:#024a5e;
+}
+.feature-box-content h4 {
+font-size:20px;
+}
+.feature-box-content p {
+  font-weight: normal;
+    line-height: 1.5;
+    color: #626262;
+}
+.feature-box:hover:before, .feature-box.active:before {
+    background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+    color: #fff;
+    content: "";
+    display: inline-block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+.feature-box a {
+    font-size: 16px;
+    font-weight: 300;
+    color: #808080;
+    margin: 25px 0 10px;
+    padding: 0 30px;
+    display: block;
+    position: relative;
+    z-index: 3;
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+}
+.feature-box:hover p{
+    font-weight: normal;
+    line-height: 1.5;
+    color: #fff;
+}
+.feature-box:hover h4{
+    color: #fff;
+}
+.feature-box:hover p{
+    color: #fff;
+}
+.feature-box:hover i{
+    color: #fff;
+}
+.feature-box:hover a{
+    color: #fff;
+    background-color: #024a5e;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    margin-bottom: 0px;
+}
+.feature-box.active a {
+    color: #fff;
+    text-decoration: none;
+}
+.feature-box.active .feature-box-img {
+
+}
+.feature-box.active .feature-border {
+    height: 45px;
+}

@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./css/jobs.css">
+  <!-- Custom fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <!-- Meta, title, CSS, favicons, etc. -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Jobs | Nploy </title>
+
+  <!-- Bootstrap -->
+  <link href="./vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link href="./vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <!-- NProgress -->
+  <link href="./vendors/nprogress/nprogress.css" rel="stylesheet">
+  <!-- iCheck -->
+  <link href="./vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+  <!-- Datatables -->
+  <!-- <link href="./vendors/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
+  <link href="./vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet">
+  <link href="./vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css" rel="stylesheet">
+  <link href="./vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet">
+  <link href="./vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet"> -->
+
+  <!-- Custom Theme Style -->
+  <link href="./css/custom.css" rel="stylesheet">
+  <link href="./css/jobs-nav.css" rel="stylesheet">
+  <!-- Mobile and tablets -->
+  <link href="./css/tablets.css" rel="stylesheet">
+
+<body class="nav-md">
+  <div class="container body">
+    <div class="main_container">
+      <div class="col-md-3 left_col" >
+        <div class="left_col scroll-view">
+          <div class="navbar nav_title" style="border: 0;">
+            <a href="#" class="logo" title="">
+              <img src="./images/logo-nploy@2x.png" alt="nPloy logo" title="nPloy"/>
+            </a>
+          </div>
+          <a href="#">
+            <a href="post-a-job.html">
+            <button type="submit" class="post_job">
+              <img style="float:left" src="./images/ic/ic-post-job@2x.png"/>
+              <span style="float:left; margin-left:7px; color:#1c394f; font-family: 'Roboto', sans-serif!important;">Post a job</span>
+            </button>
+            </a>
+          </a>
+          <div class="clearfix"></div>
+
+          <!-- menu profile quick info -->
+          <div class="profile clearfix">
+            <div class="profile_pic">
+              <img src="images/img.jpg" alt="..." class="img-circle profile_img">
+            </div>
+            <div class="profile_info">
+              <span>Dimitar Georgiev</span>
+              <h2>Progress</h2>
+            </div>
+          </div>
+          <!-- /menu profile quick info -->
+
+          <br />
+
+          <!-- sidebar menu -->
+          <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+            <div class="menu_section">
+              <ul class="nav side-menu">
+                <li><a><img src="./images/ic/ic-dashboard@2x.png"/><span>Dashboard</span></a></li>
+
+                <li class="active"><a><img src="./images/ic/ic-jobs-act@2x.png"/><span>Jobs</span></a></li>
+
+                <li><a class="candidates-nav"><img src="./images/ic/ic-candidates@2x.png"/><span>Candidates</span></a></li>
+
+                <li><a href="./message/chat.html"><img src="./images/ic/ic-messages@2x.png"/><span>Messages</span></a></li>
+
+              </ul>
+            </div>
+            <div class="menu_section">
+              <ul class="nav side-menu">
+
+                <li><a><img src="./images/ic/ic-company-profile@2x.png"/><span>Company Profile</span></a></li>
+
+                <li><a><img src="./images/ic/ic-recruit-team@2x.png"/><span>Recruitment Team</span></a></li>
+
+                <li><a><img src="./images/ic/ic-subscriptions@2x.png"/><span>Subscriptions</span></a></li>
+
+              </ul>
+            </div>
+            <div class="menu_section" style="margin-top:100px; margin-bottom: 0px; padding-left: 5px ">
+              <ul class="nav side-menu">
+
+                <li><a><img src="./images/ic/ic-company-profile@2x.png"/><span style="color:#546576!important">Logout</span></a></li>
+
+              </ul>
+            </div>
+            <div style="margin-top:100px"></div>
+          </div>
+          <!-- /sidebar menu -->
+
+        </div>
+      </div>
+
+      <!-- top navigation -->
+    <div class="top_nav">
+      <div class="nav_menu" style="border:0px;">
+
+        <div class="x_panel">
+
+          <div class="x_content">
+
+
+            <div class="" role="tabpanel" data-example-id="togglable-tabs">
+              <div class="nav toggle">
+                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+              </div>
+              <ul id="myTab" class="nav nav-tabs bar_tabs tabs-bar" role="tablist">
+                <li role="presentation" class="mobile-tab active"><a href="#tab_content1" id="home-tab" role="tab" data-toggle="tab" aria-expanded="true">Active Jobs (10)</a>
+                </li>
+                <li role="presentation" class="mobile-tab"><a href="#tab_content2" role="tab" id="profile-tab" data-toggle="tab" aria-expanded="false">Drafts (2)</a>
+                </li>
+                <li role="presentation" class="mobile-tab"><a href="#tab_content3" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false">Archive (23)</a>
+                </li>
+              </ul>
+              <div id="myTabContent" class="tab-content">
+                <div role="tabpanel" class="tab-pane fade active in" id="tab_content1" aria-labelledby="home-tab">
+                  <!-- page content -->
+
+                      <div class="col-md-12 col-sm-12 col-xs-12">
+
+                            <table class="table table-striped table-bordered">
+                              <thead style="background-color:#efefef">
+                                <tr>
+                                  <th style="width:35%">JOB TITLE</th>
+                                  <th style="width:15%">CANDIDATES</th>
+                                  <th style="width:20%">PUBLISHED ON</th>
+                                  <th style="width:20%">RECRUITER</th>
+                                  <th style="width:10%"></th>
+                                </tr>
+                              </thead>
+
+
+                              <tbody>
+
+                                <tr class='clickable-row' data-href='./jobs/jobsDetails.html'>
+
+                                  <td><img src="./images/ic/ic-job-title@2x.png"/><span class="td_names">Marketing Manager</span></td>
+                                  <td>Manager</td>
+                                  <td>Sofia</td>
+                                  <td>61</td>
+                                  <td><img src="./images/ic/arrowRight.png"/></td>
+
+                                </tr>
+
+                                <tr class='clickable-row' data-href='./jobs/jobsDetails.html'>
+                                  <td><img src="./images/ic/ic-job-title@2x.png"/><span class="td_names">Technical assistant with English</span></td>
+                                  <td>Accountant</td>
+                                  <td>Tokyo</td>
+                                  <td>63</td>
+                                  <td><img src="./images/ic/arrowRight.png"/></td>
+                                </tr>
+                                <tr class='clickable-row' data-href='./jobs/jobsDetails.html'>
+                                  <td><img src="./images/ic/ic-job-title@2x.png"/><span class="td_names">Technical Support</span></td>
+                                  <td>Junior Technical Author</td>
+                                  <td>San Francisco</td>
+                                  <td>66</td>
+                                  <td><img src="./images/ic/arrowRight.png"/></td>
+                                </tr>
+                                <tr class='clickable-row' data-href='./jobs/jobsDetails.html'>
+                                  <td><img src="./images/ic/ic-job-title@2x.png"/><span class="td_names">Network Engineer</span></td>
+                                  <td>Senior Javascript Developer</td>
+                                  <td>Edinburgh</td>
+                                  <td>22</td>
+                                  <td><img src="./images/ic/arrowRight.png"/></td>
+                                </tr>
+                                <tr class='clickable-row' data-href='./jobs/jobsDetails.html'>
+                                  <td><img src="./images/ic/ic-job-title@2x.png"/><span class="td_names">C# Software Engineer</span></td>
+                                  <td>Accountant</td>
+                                  <td>Tokyo</td>
+                                  <td>33</td>
+                                  <td><img src="./images/ic/arrowRight.png"/></td>
+                                </tr>
+                                <tr class='clickable-row' data-href='./jobs/jobsDetails.html'>
+                                  <td><img src="./images/ic/ic-job-title@2x.png"/><span class="td_names">QA Team Leader</span></td>
+                                  <td>Integration Specialist</td>
+                                  <td>New York</td>
+                                  <td>61</td>
+                                  <td><img src="./images/ic/arrowRight.png"/></td>
+                                </tr>
+                                <tr class='clickable-row' data-href='./jobs/jobsDetails.html'>
+                                  <td><img src="./images/ic/ic-job-title@2x.png"/><span class="td_names">Security Engineer</span></td>
+                                  <td>Sales Assistant</td>
+                                  <td>San Francisco</td>
+                                  <td>59</td>
+                                  <td><img src="./images/ic/arrowRight.png"/></td>
+                                </tr>
+                                <tr class='clickable-row' data-href='./jobs/jobsDetails.html'>
+                                  <td><img src="./images/ic/ic-job-title@2x.png"/><span class="td_names">CISCO Администратор на Виртуални Мрежи</span></td>
+                                  <td>Integration Specialist</td>
+                                  <td>Tokyo</td>
+                                  <td>55</td>
+                                  <td><img src="./images/ic/arrowRight.png"/></td>
+                                </tr>
+                                <tr class='clickable-row' data-href='./jobs/jobsDetails.html'>
+                                  <td><img src="./images/ic/ic-job-title@2x.png"/><span class="td_names">Fullstack C#/.NET Developer</span></td>
+                                  <td>Javascript Developer</td>
+                                  <td>San Francisco</td>
+                                  <td>39</td>
+                                  <td><img src="./images/ic/arrowRight.png"/></td>
+                                </tr>
+                                <tr class='clickable-row' data-href='./jobs/jobsDetails.html'>
+                                  <td><img src="./images/ic/ic-job-title@2x.png"/><span class="td_names">Front-end and/or JavaScript</span></td>
+                                  <td>Software Engineer</td>
+                                  <td>Edinburgh</td>
+                                  <td>23</td>
+                                  <td><img src="./images/ic/arrowRight.png"/></td>
+                                </tr>
+
+                              </tbody>
+                            </table>
+                      </div>
+
+                  <!-- /page content -->
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="tab_content2" aria-labelledby="profile-tab">
+                  <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="x_panel">
+
+                      <div class="x_content">
+                        <table class="table table-striped table-bordered">
+                          <thead style="background-color:#efefef">
+                            <tr class='clickable-row' data-href='./jobs/jobsDetails.html'>
+                              <th style="width:35%">JOB TITLE</th>
+                              <th style="width:20%">CANDIDATES</th>
+                              <th style="width:20%">PUBLISHED ON</th>
+                              <th style="width:20%">RECRUITER</th>
+                              <th style="width:5%"></th>
+                            </tr>
+                          </thead>
+
+
+                          <tbody>
+                            <tr class='clickable-row' data-href='./jobs/jobsDetails.html'>
+                              <td><img src="./images/ic/ic-job-title@2x.png"/><span class="td_names">Corporate System Administrator</span></td>
+                              <td>System Architect</td>
+                              <td>Edinburgh</td>
+                              <td>61</td>
+                              <td><img src="./images/ic/arrowRight.png"/></td>
+                            </tr>
+                            <tr class='clickable-row' data-href='./jobs/jobsDetails.html'>
+                              <td><img src="./images/ic/ic-job-title@2x.png"/><span class="td_names">Technical assistant with English</span></td>
+                              <td>Accountant</td>
+                              <td>Tokyo</td>
+                              <td>63</td>
+                              <td><img src="./images/ic/arrowRight.png"/></td>
+                            </tr>
+
+
+
+
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                    <div role="tabpanel" class="tab-pane fade" id="tab_content3" aria-labelledby="profile-tab2">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                      <div class="x_panel">
+
+                        <div class="x_content">
+                          <table class="table table-striped table-bordered">
+                            <thead style="background-color:#efefef">
+                              <tr class='clickable-row' data-href='./jobs/jobsDetails.html'>
+                                <th style="width:35%">JOB TITLE</th>
+                                <th style="width:15%">CANDIDATES</th>
+                                <th style="width:20%">PUBLISHED ON</th>
+                                <th style="width:20%">RECRUITER</th>
+                                <th style="width:10%"></th>
+                              </tr>
+                            </thead>
+
+
+                            <tbody>
+                              <tr class='clickable-row' data-href='./jobs/jobsDetails.html'>
+                                <td><img src="./images/ic/ic-job-title@2x.png"/><span class="td_names">Corporate System Administrator</span></td>
+                                <td>System Architec</td>
+                                <td>Edinburgh</td>
+                                <td>61</td>
+                                <td><img src="./images/ic/arrowRight.png"/></td>
+                              </tr>
+                              <tr class='clickable-row' data-href='./jobs/jobsDetails.html'>
+                                <td><img src="./images/ic/ic-job-title@2x.png"/><span class="td_names">Technical assistant with English</span></td>
+                                <td>Account</td>
+                                <td>Todsadsakyo</td>
+                                <td>63</td>
+                                <td><img src="./images/ic/arrowRight.png"/></td>
+                              </tr>
+                              <tr class='clickable-row' data-href='./jobs/jobsDetails.html'>
+                                <td><img src="./images/ic/ic-job-title@2x.png"/><span class="td_names">Technical Support</span></td>
+                                <td>Junior Technical Author</td>
+                                <td>San Francisco</td>
+                                <td>66</td>
+                                <td><img src="./images/ic/arrowRight.png"/></td>
+                              </tr>
+                              <tr class='clickable-row' data-href='./jobs/jobsDetails.html'>
+                                <td><img src="./images/ic/ic-job-title@2x.png"/><span class="td_names">Network Engineer</span></td>
+                                <td>Senior Javascript Developer</td>
+                                <td>Edinburgh</td>
+                                <td>22</td>
+                                <td><img src="./images/ic/arrowRight.png"/></td>
+                              </tr>
+                              <tr class='clickable-row' data-href='./jobs/jobsDetails.html'>
+                                <td><img src="./images/ic/ic-job-title@2x.png"/><span class="td_names">C# Software Engineer</span></td>
+                                <td>Accountant</td>
+                                <td>Tokyo</td>
+                                <td>33</td>
+                                <td><img src="./images/ic/arrowRight.png"/></td>
+                              </tr>
+                              <tr class='clickable-row' data-href='./jobs/jobsDetails.html'>
+                                <td><img src="./images/ic/ic-job-title@2x.png"/><span class="td_names">QA Team Leader</span></td>
+                                <td>Integration Specialist</td>
+                                <td>New York</td>
+                                <td>61</td>
+                                <td><img src="./images/ic/arrowRight.png"/></td>
+                              </tr>
+                              <tr class='clickable-row' data-href='./jobs/jobsDetails.html'>
+                                <td><img src="./images/ic/ic-job-title@2x.png"/><span class="td_names">Security Engineer</span></td>
+                                <td>Sales Assistant</td>
+                                <td>San Francisco</td>
+                                <td>59</td>
+                                <td><img src="./images/ic/arrowRight.png"/></td>
+                              </tr>
+                              <tr class='clickable-row' data-href='./jobs/jobsDetails.html'>
+                                <td><img src="./images/ic/ic-job-title@2x.png"/><span class="td_names">CISCO Администратор на Виртуални Мрежи</span></td>
+                                <td>Integration Specialist</td>
+                                <td>Tokyo</td>
+                                <td>55</td>
+                                <td><img src="./images/ic/arrowRight.png"/></td>
+                              </tr>
+                              <tr class='clickable-row' data-href='./jobs/jobsDetails.html'>
+                                <td><img src="./images/ic/ic-job-title@2x.png"/><span class="td_names">Fullstack C#/.NET Developer</span></td>
+                                <td>Javascript Developer</td>
+                                <td>San Francisco</td>
+                                <td>39</td>
+                                <td><img src="./images/ic/arrowRight.png"/></td>
+                              </tr>
+                              <tr class='clickable-row' data-href='./jobs/jobsDetails.html'>
+                                <td><img src="./images/ic/ic-job-title@2x.png"/><span class="td_names">Front-end and/or JavaScript</span></td>
+                                <td>Software Engineer</td>
+                                <td>Edinburgh</td>
+                                <td>23</td>
+                                <td><img src="./images/ic/arrowRight.png"/></td>
+                              </tr>
+
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+
+                </div>
+              </div>
+            </div>
+            <!-- /top navigation -->
+
+      <!-- page content -->
+      <div class="right_col" role="main">
+        <div class="">
+
+
+        </div>
+      </div>
+      <!-- /page content -->
+
+      <!-- footer content -->
+      <!-- /footer content -->
+    </div>
+  </div>
+
+  <!-- jQuery -->
+  <script src="./vendors/jquery/dist/jquery.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="./vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- FastClick -->
+  <script src="./vendors/fastclick/lib/fastclick.js"></script>
+  <!-- NProgress -->
+  <script src="./vendors/nprogress/nprogress.js"></script>
+  <!-- iCheck -->
+  <script src="./vendors/iCheck/icheck.min.js"></script>
+  <!-- Datatables -->
+  <!-- <script src="./vendors/datatables.net/js/jquery.dataTables.min.js"></script>
+  <script src="./vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+  <script src="./vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+  <script src="./vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+  <script src="./vendors/datatables.net-buttons/js/buttons.flash.min.js"></script>
+  <script src="./vendors/datatables.net-buttons/js/buttons.html5.min.js"></script>
+  <script src="./vendors/datatables.net-buttons/js/buttons.print.min.js"></script>
+  <script src="./vendors/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js"></script>
+  <script src="./vendors/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
+  <script src="./vendors/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+  <script src="./vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js"></script>
+  <script src="./vendors/datatables.net-scroller/js/dataTables.scroller.min.js"></script>
+  <script src="./vendors/jszip/dist/jszip.min.js"></script>
+  <script src="./vendors/pdfmake/build/pdfmake.min.js"></script>
+  <script src="./vendors/pdfmake/build/vfs_fonts.js"></script> -->
+
+  <!-- Custom Theme Scripts -->
+  <script src="./js/custom.min.js"></script>
+  <!-- Tabels TR -->
+  <script>
+  jQuery(document).ready(function($) {
+    $(".clickable-row").click(function() {
+        window.location = $(this).data("href");
+    });
+});
+  </script>
+</body>
+</html>

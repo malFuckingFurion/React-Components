@@ -1,0 +1,64 @@
+.action-box {
+    position: relative;
+}
+.action-box.action-box-border {
+    padding: 30px;
+    border: 1px solid #eeeeee;
+}
+.action-box .action-box-text {
+    padding-right: 230px;
+}
+.action-box h3 {
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  font-family: 'Montserrat', sans-serif;
+  color: #024a5e;
+  margin-top: 0px;
+  margin-bottom: .5rem;
+}
+.action-box strong {
+    font-weight: bold;
+}
+.action-box p {
+      margin-top: 0;
+      font-weight: normal;
+    line-height: 1.5;
+    color: #626262;
+        margin-bottom: 0;
+}
+.button-hover-black {
+    background: #024a5e;
+    padding: 10px 20px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+    border: 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: inline-block;
+    border-radius: 3px;
+    text-align: center;
+    border: 2px solid #024a5e;
+    cursor: pointer;
+    text-decoration: none;
+}
+.button-hover-black:hover {
+    background: #333;
+    border: 2px solid #333;
+}
+
+.action-box a.button {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -20px;
+}
+.action-box.action-box-border a.button {
+    right: 30px;
+}
+.action-box i {
+      margin-left: 10px;
+}

@@ -1,0 +1,37 @@
+.blue-bk{
+  background-color: #007594;
+}
+.accordion-text{
+  color:#fff;
+      margin-left: 50px;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  text-align: left;
+}
+#accordion__title-0[aria-selected="false"]{
+  color:black;
+   font-size: 15px;
+   padding-left: 50px;
+}
+#accordion__title-1[aria-selected="false"]{
+  color:black;
+   font-size: 15px;
+   padding-left: 50px;
+}
+#accordion__title-2[aria-selected="false"]{
+  color:black;
+   font-size: 15px;
+   padding-left: 50px;
+}
+
+:focus {
+    outline: -webkit-focus-ring-color auto 0px;
+}
+.accordion__title > *:last-child {
+    margin-bottom: 0;
+    font-weight: 500;
+}

@@ -1,0 +1,48 @@
+.small, small {
+  font-size: 80%;
+  font-weight: 400;
+}
+.action-box {
+  position: relative;
+}
+.gray-bg {
+  background: #f7f7f7;
+}
+.action-box.small {
+  padding: 40px 35px;
+}
+.action-box.small .action-box-text {
+  padding-right: 0;
+}
+.action-box.small h3{
+  position: relative;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  color: #363636;
+  margin-top: 0px;
+
+}
+.action-box p {
+  margin-bottom: 0;
+  position: relative;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #626262;
+}
+.button.button-border.black {
+  background: transparent;
+  border: 2px solid #353535;
+  color: #353535;
+}
+.action-box.small a.button {
+  position: relative;
+  top: inherit;
+  right: inherit;
+  margin-top: 15px;
+}
+.button.button-border.black:hover {
+  background: #333;
+  color:#fff;
+}

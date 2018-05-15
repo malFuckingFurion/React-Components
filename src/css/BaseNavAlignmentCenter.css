@@ -1,0 +1,26 @@
+.nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+.justify-content-center {
+    -webkit-box-pack: center!important;
+    -ms-flex-pack: center!important;
+    justify-content: center!important;
+}
+.nav-link {
+    display: block;
+    padding: .5rem 1rem;
+    text-decoration: none;
+}
+.nav-icons{
+  padding-left:10px;
+}
+.nav > .nav-item > .active{
+  color:red
+}

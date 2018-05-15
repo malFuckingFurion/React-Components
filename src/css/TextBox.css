@@ -1,0 +1,35 @@
+
+.text-box-span{
+  height: 11px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+}
+.text-box-h2{
+height: 21px;
+font-family: 'Raleway', sans-serif;
+font-size: 18px;
+font-weight: 600;
+font-style: normal;
+font-stretch: normal;
+line-height: normal;
+letter-spacing: normal;
+text-align: left;
+color:#024a5e;
+margin-top: 0px;
+}
+.text-box-p, .text-box-second-p{
+font-family: 'Raleway', sans-serif;
+font-size: 13px;
+font-weight: 500;
+font-style: normal;
+font-stretch: normal;
+line-height: normal;
+letter-spacing: normal;
+text-align: left;
+}
